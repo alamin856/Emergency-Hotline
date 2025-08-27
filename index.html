@@ -27,8 +27,8 @@
             </div>
             <div class="flex items-center gap-10">
                 <p class="inter-font flex items-center gap-2 bg-[#41FF6B1A] py-1 px-4 rounded-full text-[#000000] font-bold"><span id="heart-count">0 </span><img width="20" src="./assets/heart.png" alt=""></p>
-                <p class="inter-font flex items-center gap-2 bg-[#41FF6B1A] py-1 px-4 rounded-full text-[#000000] font-bold"><span>100 </span><img width="20" src="./assets/coin.png" alt=""></p>
-                <p class="inter-font flex items-center gap-2 bg-[#00A63E] py-1 px-4 rounded-full text-white"><span>0 </span> Copy</p>
+                <p class="inter-font flex items-center gap-2 bg-[#41FF6B1A] py-1 px-4 rounded-full text-[#000000] font-bold"><span id="coin-count">100 </span><img width="20" src="./assets/coin.png" alt=""></p>
+                <p class="inter-font flex items-center gap-2 bg-[#00A63E] py-1 px-4 rounded-full text-white"><span id="copy-count">0 </span> Copy</p>
             </div>
         </nav>
         <div class="banner bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] py-5">
@@ -40,7 +40,7 @@
         </div>
     </header>
     <main class="bg-[#41FF6B1A]">
-        <section class="max-w-[1920px] mx-auto grid grid-rows-2 xl:grid-cols-12 gap-5">
+        <section class="max-w-[1920px] mx-auto grid xl:grid-cols-12 gap-5">
             <div id="card-container" class="col-span-9 grid grid-cols-1 xl:grid-cols-3 gap-5 my-[48px]">
                 <!-- Card 1-->
                 <div class="card p-[1.25rem] rounded-xl bg-white shadow-lg">
@@ -57,7 +57,7 @@
                     <h1 class="phone-number roboto text-[2rem] font-bold">999</h1>
                     <span class="bg-gray-300 text-[#5C5C5C] w-12 py-[1px] rounded-full text-center mb-[20px]">All</span>
                     <div class="flex gap-4 mr-4">
-                        <button class="btn btn-wide max-w-[50%] bg-[#D4D6D5] hover:bg-black hover:text-white text-[#5C5C5C] rounded-lg"><i class="fa-solid fa-copy"></i> Copy</button>
+                        <button class="copy-btn btn btn-wide max-w-[50%] bg-[#D4D6D5] hover:bg-black hover:text-white text-[#5C5C5C] rounded-lg"><i class="fa-solid fa-copy"></i> Copy</button>
                         <button class="call-btn btn btn-wide max-w-[50%] bg-[#00A63E] text-[#ffffff] hover:bg-gray-300 hover:text-black  rounded-lg"><i class="fa-solid fa-phone"></i> Call</button>
                     </div>
                 </div>
@@ -76,7 +76,7 @@
                     <h1 class="phone-number roboto text-[2rem] font-bold">999</h1>
                     <span class="bg-gray-300 text-[#5C5C5C] w-17 py-[1px] rounded-full text-center mb-[20px]">Police</span>
                     <div class="flex gap-4 mr-4">
-                        <button class="btn btn-wide max-w-[50%] bg-[#D4D6D5] hover:bg-black hover:text-white text-[#5C5C5C] rounded-lg"><i class="fa-solid fa-copy"></i> Copy</button>
+                        <button class="copy-btn btn btn-wide max-w-[50%] bg-[#D4D6D5] hover:bg-black hover:text-white text-[#5C5C5C] rounded-lg"><i class="fa-solid fa-copy"></i> Copy</button>
                         <button class="call-btn btn btn-wide max-w-[50%] bg-[#00A63E] text-[#ffffff] hover:bg-gray-300 hover:text-black rounded-lg"><i class="fa-solid fa-phone"></i> Call</button>
                     </div>
                 </div>
@@ -95,7 +95,7 @@
                     <h1 class="phone-number roboto text-[2rem] font-bold">999</h1>
                     <span class="bg-gray-300 text-[#5C5C5C] w-12 py-[1px] rounded-full text-center mb-[20px]">Fire</span>
                     <div class="flex gap-4 mr-4">
-                        <button class="btn btn-wide max-w-[50%] bg-[#D4D6D5] hover:bg-black hover:text-white text-[#5C5C5C] rounded-lg"><i class="fa-solid fa-copy"></i> Copy</button>
+                        <button class="copy-btn btn btn-wide max-w-[50%] bg-[#D4D6D5] hover:bg-black hover:text-white text-[#5C5C5C] rounded-lg"><i class="fa-solid fa-copy"></i> Copy</button>
                         <button class="call-btn btn btn-wide max-w-[50%] bg-[#00A63E] text-[#ffffff] hover:bg-gray-300 hover:text-black rounded-lg"><i class="fa-solid fa-phone"></i> Call</button>
                     </div>
                 </div>
@@ -114,7 +114,7 @@
                     <h1 class="phone-number roboto text-[2rem] font-bold">1994-999999</h1>
                     <span class="bg-gray-300 text-[#5C5C5C] w-20 py-[1px] rounded-full text-center mb-[20px]">Health</span>
                     <div class="flex gap-4 mr-4">
-                        <button class="btn btn-wide max-w-[50%] bg-[#D4D6D5] hover:bg-black hover:text-white text-[#5C5C5C] rounded-lg"><i class="fa-solid fa-copy"></i> Copy</button>
+                        <button class="copy-btn btn btn-wide max-w-[50%] bg-[#D4D6D5] hover:bg-black hover:text-white text-[#5C5C5C] rounded-lg"><i class="fa-solid fa-copy"></i> Copy</button>
                         <button class="call-btn btn btn-wide max-w-[50%] bg-[#00A63E] text-[#ffffff] hover:bg-gray-300 hover:text-black  rounded-lg"><i class="fa-solid fa-phone"></i> Call</button>
                     </div>
                 </div>
@@ -133,7 +133,7 @@
                     <h1 class="phone-number roboto text-[2rem] font-bold">109</h1>
                     <span class="bg-gray-300 text-[#5C5C5C] w-15 py-[1px] rounded-full text-center mb-[20px]">Help</span>
                     <div class="flex gap-4 mr-4">
-                        <button class="btn btn-wide max-w-[50%] bg-[#D4D6D5] hover:bg-black hover:text-white text-[#5C5C5C] rounded-lg"><i class="fa-solid fa-copy"></i> Copy</button>
+                        <button class="copy-btn btn btn-wide max-w-[50%] bg-[#D4D6D5] hover:bg-black hover:text-white text-[#5C5C5C] rounded-lg"><i class="fa-solid fa-copy"></i> Copy</button>
                         <button class="call-btn btn btn-wide max-w-[50%] bg-[#00A63E] text-[#ffffff] hover:bg-gray-300 hover:text-black rounded-lg"><i class="fa-solid fa-phone"></i> Call</button>
                     </div>
                 </div>
@@ -152,7 +152,7 @@
                     <h1 class="phone-number roboto text-[2rem] font-bold">106</h1>
                     <span class="bg-gray-300 text-[#5C5C5C] w-15 py-[1px] rounded-full text-center mb-[20px]">Govt</span>
                     <div class="flex gap-4 mr-4">
-                        <button class="btn btn-wide max-w-[50%] bg-[#D4D6D5] hover:bg-black hover:text-white text-[#5C5C5C] rounded-lg"><i class="fa-solid fa-copy"></i> Copy</button>
+                        <button class="copy-btn btn btn-wide max-w-[50%] bg-[#D4D6D5] hover:bg-black hover:text-white text-[#5C5C5C] rounded-lg"><i class="fa-solid fa-copy"></i> Copy</button>
                         <button class="call-btn btn btn-wide max-w-[50%] bg-[#00A63E] text-[#ffffff] hover:bg-gray-300 hover:text-black rounded-lg"><i class="fa-solid fa-phone"></i> Call</button>
                     </div>
                 </div>
@@ -171,7 +171,7 @@
                     <h1 class="phone-number roboto text-[2rem] font-bold">16216</h1>
                     <span class="bg-gray-300 text-[#5C5C5C] w-25 py-[1px] rounded-full text-center mb-[20px]">Electricity</span>
                     <div class="flex gap-4 mr-4">
-                        <button class="btn btn-wide max-w-[50%] bg-[#D4D6D5] hover:bg-black hover:text-white text-[#5C5C5C] rounded-lg"><i class="fa-solid fa-copy"></i> Copy</button>
+                        <button class="copy-btn btn btn-wide max-w-[50%] bg-[#D4D6D5] hover:bg-black hover:text-white text-[#5C5C5C] rounded-lg"><i class="fa-solid fa-copy"></i> Copy</button>
                         <button class="call-btn btn btn-wide max-w-[50%] bg-[#00A63E] text-[#ffffff] hover:bg-gray-300 hover:text-black rounded-lg"><i class="fa-solid fa-phone"></i> Call</button>
                     </div>
                 </div>
@@ -190,7 +190,7 @@
                     <h1 class="phone-number roboto text-[2rem] font-bold">16445</h1>
                     <span class="bg-gray-300 text-[#5C5C5C] w-15 py-[1px] rounded-full text-center mb-[20px]">NGO</span>
                     <div class="flex gap-4 mr-4">
-                        <button class="btn btn-wide max-w-[50%] bg-[#D4D6D5] hover:bg-black hover:text-white text-[#5C5C5C] rounded-lg"><i class="fa-solid fa-copy"></i> Copy</button>
+                        <button class="copy-btn btn btn-wide max-w-[50%] bg-[#D4D6D5] hover:bg-black hover:text-white text-[#5C5C5C] rounded-lg"><i class="fa-solid fa-copy"></i> Copy</button>
                         <button class="call-btn btn btn-wide max-w-[50%] bg-[#00A63E] text-[#ffffff] hover:bg-gray-300 hover:text-black  rounded-lg"><i class="fa-solid fa-phone"></i> Call</button>
                     </div>
                 </div>
@@ -209,7 +209,7 @@
                     <h1 class="phone-number roboto text-[2rem] font-bold">163</h1>
                     <span class="bg-gray-300 text-[#5C5C5C] w-20 py-[1px] rounded-full text-center mb-[20px]">Travel</span>
                     <div class="flex gap-4 mr-4">
-                        <button class="btn btn-wide max-w-[50%] bg-[#D4D6D5] hover:bg-black hover:text-white text-[#5C5C5C] rounded-lg"><i class="fa-solid fa-copy"></i> Copy</button>
+                        <button class="copy-btn btn btn-wide max-w-[50%] bg-[#D4D6D5] hover:bg-black hover:text-white text-[#5C5C5C] rounded-lg"><i class="fa-solid fa-copy"></i> Copy</button>
                         <button class="call-btn btn btn-wide max-w-[50%] bg-[#00A63E] text-[#ffffff] hover:bg-gray-300 hover:text-black rounded-lg"><i class="fa-solid fa-phone"></i> Call</button>
                     </div>
                 </div>
@@ -220,13 +220,7 @@
                         <h3 class="roboto text-[1.25rem] font-medium"><i class="fa-regular fa-clock"></i> Call History</h3>
                         <button id="clear-btn" class="btn bg-[#00A63E] text-white rounded-full inter tracking-wide">Clear</button>
                     </div>
-                    <div id="history" class="flex justify-between items-center bg-[#FAFAFA] p-5 rounded-lg mt-[16px]">
-                        <div>
-                            <h3 class="text-[#111111] font-semibold text-[18px]">Fire Service Number</h3>
-                            <p class="text-[#5C5C5C]">999</p>
-                        </div>
-                        <span class="text-[#111111] text-[18px]">Date</span>
-                    </div>
+                    <div id="history"></div>
                 </div>
             </aside>
         </section>
