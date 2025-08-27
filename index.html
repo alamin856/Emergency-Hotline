@@ -41,7 +41,7 @@
     </header>
     <main class="bg-[#41FF6B1A]">
         <section class="max-w-[1920px] mx-auto grid xl:grid-cols-12 gap-5">
-            <div id="card-container" class="col-span-9 grid grid-cols-1 xl:grid-cols-3 gap-5 my-[48px]">
+            <div id="card-container" class="col-span-9 grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-5 my-[48px]">
                 <!-- Card 1-->
                 <div class="card p-[1.25rem] rounded-xl bg-white shadow-lg">
                     <div class="flex justify-between items-center mb-[16px]">
@@ -195,7 +195,7 @@
                     </div>
                 </div>
                 <!-- Card 9 -->
-                <div class="card p-[1.25rem] rounded-xl bg-white shadow-lg">
+                <div class="card p-[1.25rem] rounded-xl bg-white shadow-lg sm:hidden 2xl:block">
                     <div class="flex justify-between items-center mb-[16px]">
                         <div class="bg-[#FFE3E2] w-[40px] h-[40px] flex justify-center items-center rounded-xl">
                             <img width="20" src="./assets/emergency.png" alt="emergency">
@@ -216,7 +216,11 @@
             </div>
             <aside class="bg-white rounded-xl col-span-9 xl:col-span-3  my-[48px] shadow-lg">
                 <div id="call-history" class="p-5">
-
+                    <div class="flex justify-between items-center">
+                        <h3 class="roboto text-[1.25rem] font-medium"><i class="fa-regular fa-clock"></i> Call History</h3>
+                        <button id="clear-btn" class="btn bg-[#00A63E] text-white rounded-full inter tracking-wide">Clear</button>
+                    </div>
+                    <div id="history"></div>
                 </div>
             </aside>
         </section>
