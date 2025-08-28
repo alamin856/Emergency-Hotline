@@ -18,11 +18,10 @@ document.getElementById("card-container").addEventListener("click", function(eve
     if(event.target.className.includes("call-btn")){
         const date = new Date().toLocaleTimeString()
         const title = event.target.parentNode.parentNode.children[1].children[0].innerText;
-        const subTitle = event.target.parentNode.parentNode.children[1].children[1].innerText;
         const phoneNumber = event.target.parentNode.parentNode.children[2].innerText;
         const coinCount = parseInt(getElement("coin-count").innerText);
         if(coinCount >=20){
-            alert(`${title} ${phoneNumber}`)
+            alert(`Calling ${title} ${phoneNumber}`)
             const totalCoinCount = coinCount - 20
             getElement("coin-count").innerText = totalCoinCount;
             const histoty = getElement("history");
