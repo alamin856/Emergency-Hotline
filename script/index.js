@@ -73,6 +73,7 @@ document.getElementById("card-container").addEventListener("click", function (ev
 
 
 // Copy Button Event Handler
+
 document.getElementById("card-container").addEventListener("click", function(event){
     let phoneNumber = 0   
     
@@ -102,7 +103,3 @@ document.getElementById("clear-btn").addEventListener("click", function(){
     const history = document.getElementById("history");
     history.innerHTML = ""
 })
-
-
-
-// Call Button Event Handler
