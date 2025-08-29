@@ -15,7 +15,7 @@ document.getElementById("card-container").addEventListener('click', function(eve
 
 // Call Button Event Handler
 document.getElementById("card-container").addEventListener("click", function(event){
-    if(event.target.className.includes("call-btn")){
+    if(event.target.className.includes("call-btn") || event.target.className.includes("mb-1")){
         const date = new Date().toLocaleTimeString()
         const title = event.target.parentNode.parentNode.children[1].children[0].innerText;
         const phoneNumber = event.target.parentNode.parentNode.children[2].innerText;
