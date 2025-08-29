@@ -15,21 +15,21 @@ document.getElementById("card-container").addEventListener('click', function(eve
 
 // Call Button Event Handler
 
-document.getElementById("card-container").addEventListener("click", function(event){
-    if(event.target.className.includes("call-btn")){
+document.getElementById("card-container").addEventListener("click", function (event) {
+    if (event.target.parentNode.className.includes('call-btn')) {
         const date = new Date().toLocaleTimeString()
-        const title = event.target.parentNode.parentNode.children[1].children[0].innerText;
-        const phoneNumber = event.target.parentNode.parentNode.children[2].innerText;
+        const title = event.target.parentNode.parentNode.parentNode.children[1].children[0].innerText;
+        const phoneNumber = event.target.parentNode.parentNode.parentNode.children[2].innerText;
         const coinCount = parseInt(getElement("coin-count").innerText);
-        if(coinCount >=20){
+
+        if (coinCount >= 20) {
             alert(`Calling ${title} ${phoneNumber}`)
             const totalCoinCount = coinCount - 20
             getElement("coin-count").innerText = totalCoinCount;
-
             const histoty = getElement("history");
             const newHistory = document.createElement("div");
             newHistory.innerHTML = `
-                    <div class="flex justify-between items-center gap-1 bg-[#FAFAFA] p-5 rounded-lg mt-[16px]">
+                    <div class="flex justify-between items-center bg-[#FAFAFA] p-5 rounded-lg mt-[16px]">
                         <div>
                             <h3 class="text-[#111111] font-semibold text-[18px]">${title}</h3>
                             <p class="text-[#5C5C5C]">${phoneNumber}</p>
@@ -39,7 +39,33 @@ document.getElementById("card-container").addEventListener("click", function(eve
                     </div>
             `
             histoty.appendChild(newHistory)
-        }else{
+        } else {
+            alert("You don't have enough coins. You need at least 20 coins to make a call.")
+        }
+    }
+    else if (event.target.className.includes("call-btn")) {
+        const date = new Date().toLocaleTimeString()
+        const title = event.target.parentNode.parentNode.children[1].children[0].innerText;
+        const phoneNumber = event.target.parentNode.parentNode.children[2].innerText;
+        const coinCount = parseInt(getElement("coin-count").innerText);
+        if (coinCount >= 20) {
+            alert(`Calling ${title} ${phoneNumber}`)
+            const totalCoinCount = coinCount - 20
+            getElement("coin-count").innerText = totalCoinCount;
+            const histoty = getElement("history");
+            const newHistory = document.createElement("div");
+            newHistory.innerHTML = `
+                    <div class="flex justify-between items-center bg-[#FAFAFA] p-5 rounded-lg mt-[16px]">
+                        <div>
+                            <h3 class="text-[#111111] font-semibold text-[18px]">${title}</h3>
+                            <p class="text-[#5C5C5C]">${phoneNumber}</p>
+                        </div>
+                        <div>
+                        <span class="text-[#111111] text-[18px]">${date}</span></div>
+                    </div>
+            `
+            histoty.appendChild(newHistory)
+        } else {
             alert("You don't have enough coins. You need at least 20 coins to make a call.")
         }
     }
@@ -76,3 +102,7 @@ document.getElementById("clear-btn").addEventListener("click", function(){
     const history = document.getElementById("history");
     history.innerHTML = ""
 })
+
+
+
+// Call Button Event Handler
